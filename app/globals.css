@@ -12,7 +12,7 @@
     @apply font-extrabold;
   }
   h3 {
-    @apply text-3xl;
+    @apply text-2xl;
     @apply font-bold;
   }
 }

@@ -3,12 +3,13 @@ import Profile from "./profile";
 import Introduce from "./introduce";
 import Projects from "./projects";
 import Skills from "./skills";
+import Education from "./education";
 
 export default function Resume() {
   return (
-    <main className="w-full max-w-[794px] my-0 mx-auto aspect-a4 p-6 flex flex-col gap-3 text-black">
+    <main className="w-full max-w-[794px] my-0 mx-auto aspect-a4 p-6 flex flex-col gap-6 text-black">
       <section>
-        <h1 className="mb-2">권주현</h1>
+        <h1>권주현</h1>
         <h2 className="mb-3 text-blue-500">Front-End Engineer</h2>
         <ul className="flex justify-between text-lg font-medium">
           <li className="flex items-center gap-2">
@@ -30,13 +31,16 @@ export default function Resume() {
           </li>
         </ul>
       </section>
-      <section className="grid grid-cols-3">
+      <section className="flex items-center gap-6">
         <Profile />
         <Introduce />
       </section>
       <section className="grid grid-cols-3 gap-3">
         <Projects />
-        <Skills />
+        <div className="flex flex-col col-span-1 gap-6">
+          <Skills />
+          <Education />
+        </div>
       </section>
     </main>
   );

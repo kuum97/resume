@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="col-span-1">
-      <div className="relative mr-6 w-[210px] h-[280px] shadow-xl ">
+    <div>
+      <div className="relative w-[180px] h-[240px] shadow-lg">
         <Image fill src="/my_photo.jpeg" alt="profile-photo" />
       </div>
     </div>
