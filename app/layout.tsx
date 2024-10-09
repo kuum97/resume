@@ -20,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body
-        className={`${pretendard.className} flex flex-col justify-center items-center w-screen`}
-      >
-        {children}
-      </body>
+      <body className={pretendard.className}>{children}</body>
     </html>
   );
 }
