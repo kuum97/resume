@@ -1,16 +1,16 @@
-import Introduce from "./introduce";
-import Profile from "./profile";
 import { VscMail, VscGithubInverted, VscCallIncoming } from "react-icons/vsc";
+import Profile from "./profile";
+import Introduce from "./introduce";
+import Projects from "./projects";
+import Skills from "./skills";
 
 export default function Resume() {
   return (
-    <main className="w-full max-w-[794px] aspect-a4 p-6">
-      <section className="flex flex-col gap-3 mb-3">
-        <h1>권주현</h1>
-        <h2 className="text-blue-500">Front-End Engineer</h2>
-      </section>
+    <main className="w-full max-w-[794px] my-0 mx-auto aspect-a4 p-6 flex flex-col gap-3 text-black">
       <section>
-        <ul className="flex justify-between mb-3 text-lg font-medium">
+        <h1 className="mb-2">권주현</h1>
+        <h2 className="mb-3 text-blue-500">Front-End Engineer</h2>
+        <ul className="flex justify-between text-lg font-medium">
           <li className="flex items-center gap-2">
             <VscMail />
             kuum1797@gmail.com
@@ -30,9 +30,13 @@ export default function Resume() {
           </li>
         </ul>
       </section>
-      <section className="flex items-center">
+      <section className="grid grid-cols-3">
         <Profile />
         <Introduce />
+      </section>
+      <section className="grid grid-cols-3 gap-3">
+        <Projects />
+        <Skills />
       </section>
     </main>
   );

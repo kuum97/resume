@@ -1,6 +1,6 @@
 export default function Introduce() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col col-span-2 gap-3">
       <h3>소개</h3>
       <div className="flex flex-col gap-2">
         <p className="text-lg">
