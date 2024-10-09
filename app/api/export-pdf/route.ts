@@ -15,9 +15,12 @@ export async function GET() {
     `,
   });
 
-  await page.goto("http://localhost:3000/pdf-render", {
-    waitUntil: "networkidle2",
-  });
+  await page.goto(
+    "https://resume-ph7brtwbr-kuum97s-projects.vercel.app/pdf-render",
+    {
+      waitUntil: "networkidle2",
+    }
+  );
 
   const pdf = await page.pdf({
     format: "A4",
